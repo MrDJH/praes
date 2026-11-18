@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Offlinefähige Bibliothek für reveal.js-Präsentationen.">
+  <title>Präsentationsbibliothek</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="eyebrow">LOCAL FIRST · REVEAL.JS</div>
+      <h1>Präsentationsbibliothek</h1>
+      <p>Alle Präsentationen an einem Ort. Lokal verfügbar und optional über GitHub Pages veröffentlicht.</p>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <section class="toolbar" aria-label="Präsentationen durchsuchen und filtern">
+      <label class="field search-field">
+        <span>Suche</span>
+        <input id="search" type="search" placeholder="Titel, Beschreibung oder Schlagwort" autocomplete="off">
+      </label>
+      <label class="field category-field">
+        <span>Kategorie</span>
+        <select id="category">
+          <option value="">Alle Kategorien</option>
+        </select>
+      </label>
+      <label class="field sort-field">
+        <span>Sortierung</span>
+        <select id="sort">
+          <option value="title">Titel (A–Z)</option>
+          <option value="date-desc">Neueste zuerst</option>
+          <option value="date-asc">Älteste zuerst</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="results-bar">
+      <p id="result-count" aria-live="polite">Katalog wird geladen …</p>
+      <p class="local-note">Keine externen Laufzeitdienste erforderlich</p>
+    </div>
+
+    <section id="presentations" class="card-grid" aria-label="Vorhandene Präsentationen">
+      <p class="loading-state">Präsentationen werden geladen …</p>
+    </section>
+
+    <noscript>
+      <p class="error-state">Für die Präsentationsübersicht muss JavaScript aktiviert sein.</p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <span>Präsentationsbibliothek</span>
+    <span>Statische Website · Offlinefähig nach Einrichtung</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "presentations": [
+    {
+      "slug": "demo",
+      "title": "Demo: Offline-Präsentation",
+      "description": "Beispiel für Navigation, lokale Medien, Code-Highlighting und Sprechernotizen.",
+      "category": "Beispiel",
+      "date": "2026-11-18",
+      "tags": [
+        "reveal.js",
+        "Demo",
+        "Offline"
+      ],
+      "thumbnail": "media/thumbnail.svg"
+    },
+    {
+      "slug": "test1",
+      "title": "Test1",
+      "description": "Neue Präsentation.",
+      "category": "Allgemein",
+      "date": "2026-11-18",
+      "tags": [],
+      "thumbnail": "media/thumbnail.svg"
+    }
+  ]
+}

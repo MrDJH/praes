@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test1</title>
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/theme/night.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/plugin/highlight/monokai.css">
+
+  <!-- Lokale Stylesheets für Whiteboard & Buttons -->
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/plugin/chalkboard/style.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/plugin/customcontrols/style.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Test1</h1>
+        <p>Drücke <b>C</b> zum Schreiben, <b>B</b> fürs Whiteboard oder <b>Alt + Klick</b> zum Zoomen.</p>
+      </section>
+      <section>
+        <h2>Erster Abschnitt</h2>
+        <p>Hier beginnt der Inhalt deiner Präsentation.</p>
+      </section>
+      <section>
+        <h2>Beispielcode</h2>
+        <pre><code class="language-javascript" data-trim>
+const message = "Deine Präsentation";
+console.log(message);
+        </code></pre>
+      </section>
+    </div>
+  </div>
+
+  <!-- Reveal.js Basis -->
+  <script src="../../vendor/reveal.js/dist/reveal.js"></script>
+
+  <!-- Standard-Plugins (liegen direkt in plugin/) -->
+  <script src="../../vendor/reveal.js/dist/plugin/markdown.js"></script>
+  <script src="../../vendor/reveal.js/dist/plugin/highlight.js"></script>
+  <script src="../../vendor/reveal.js/dist/plugin/notes.js"></script>
+  <script src="../../vendor/reveal.js/dist/plugin/zoom.js"></script>
+  <script src="../../vendor/reveal.js/dist/plugin/search.js"></script>
+
+  <!-- Zusatz-Plugins (liegen in ihren Unterordnern) -->
+  <script src="../../vendor/reveal.js/dist/plugin/chalkboard/plugin.js"></script>
+  <script src="../../vendor/reveal.js/dist/plugin/customcontrols/plugin.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      controls: true,
+      progress: true,
+      transition: "slide",
+
+      // Whiteboard-Einstellungen
+      chalkboard: {
+        theme: "whiteboard"
+      },
+
+      
+
+      // Alle geladenen Plugins aktivieren
+      plugins: [
+        RevealMarkdown,
+        RevealHighlight,
+        RevealNotes,
+        RevealZoom,
+        RevealSearch,
+        RevealChalkboard,
+        RevealCustomControls
+      ]
+    });
+  </script>
+</body>
+</html>

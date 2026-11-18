@@ -1,0 +1,12 @@
+{
+  "title": "Demo: Offline-Präsentation",
+  "description": "Beispiel für Navigation, lokale Medien, Code-Highlighting und Sprechernotizen.",
+  "category": "Beispiel",
+  "date": "2026-11-18",
+  "tags": [
+    "reveal.js",
+    "Demo",
+    "Offline"
+  ],
+  "thumbnail": "media/thumbnail.svg"
+}

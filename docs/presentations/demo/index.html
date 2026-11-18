@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Demo: Offline-Präsentation</title>
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/theme/white.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/plugin/chalkboard/style.css">
+  <style>
+    .reveal .slides { text-align: left; }
+    .reveal .slides h1, .reveal .slides h2 { color: #203a57; }
+    .reveal .slides .small-note { color: #667085; font-size: .65em; }
+    .reveal .slides img { max-height: 360px; border: 0; box-shadow: none; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <p class="small-note">PRÄSENTATIONSBIBLIOTHEK · DEMO</p>
+        <h1>Offline präsentieren</h1>
+        <p>Eine lokale reveal.js-Präsentation ohne CDN und ohne externe Laufzeitdienste.</p>
+        <aside class="notes">Sprechernotiz: Diese Beispielpräsentation zeigt die lokale Einbindung von reveal.js.</aside>
+      </section>
+
+      <section>
+        <h2>Die Grundidee</h2>
+        <ul>
+          <li>Alle Laufzeitdateien liegen im Repository.</li>
+          <li>Die Startseite liest einen lokal erzeugten JSON-Katalog.</li>
+          <li>GitHub Pages veröffentlicht dieselben statischen Dateien.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lokale Medien</h2>
+        <p>Auch Grafiken werden relativ aus dem Präsentationsordner geladen:</p>
+        <img src="media/thumbnail.svg" alt="Lokale Demo-Grafik">
+      </section>
+
+      <section>
+        <h2>Code-Highlighting</h2>
+        <pre><code class="language-python" data-trim>
+def main():
+    print("Hallo, Offline-Welt!")
+
+if __name__ == "__main__":
+    main()
+        </code></pre>
+      </section>
+
+      <section>
+        <h2>Navigation</h2>
+        <p>Mit den Pfeiltasten, den Navigationssymbolen oder durch Wischen auf Touchscreens wechseln.</p>
+        <p class="small-note">Taste S öffnet – sofern vom Browser zugelassen – die Sprecheransicht.</p>
+      </section>
+
+      <section>
+        <h2>Bereit</h2>
+        <p>Ersetze diese Folien durch deine Inhalte oder lege eine neue Präsentation mit dem Python-Hilfsskript an.</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="../../vendor/reveal.js/dist/reveal.js"></script>
+  <script src="../../vendor/reveal.js/dist/plugin/markdown.js"></script>
+  <script src="../../vendor/reveal.js/dist/plugin/highlight.js"></script>
+  <script src="../../vendor/reveal.js/dist/plugin/notes.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      controls: true,
+      progress: true,
+      transition: "slide",
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChalkboard, RevealZoom]
+    });
+  </script>
+</body>
+</html>
